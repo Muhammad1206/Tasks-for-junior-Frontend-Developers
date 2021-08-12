@@ -58,8 +58,8 @@ export default function CustomizedTables(props) {
     if (isNaN(amount)) {
       dispatch(updateAmountProductsActionCreator(0));
     } else {
-      const idProduct = event.target.name;
-      const product = props.products.filter(item => item.gid === idProduct);
+      const idProduct = Number(event.target.name);
+      const product = props.products.filter(item => item.gid == idProduct);
       const price = Number(product[0].gprice) * amount;
       dispatch(updateAmountProductsActionCreator(amount, idProduct, price));
     }

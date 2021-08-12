@@ -1,12 +1,8 @@
 import React from 'react';
-import "./Loader.css"
+import style from "./Loader.module.css"
 
 
 const Loader = () => {
-    return (
-        <div className = "content">
-        <div className="cm-spinner"></div>
-      </div>    )
+  return <div className={style.spinner}></div>
 }
-
 export default Loader;
