@@ -1,0 +1,15 @@
+.sidebar {
+    max-width: 400px;
+}
+.sidebar ul {
+   list-style: none;
+}
+
+.sidebar ul li {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.sidebar ul li a {
+    text-decoration:  none;
+}
